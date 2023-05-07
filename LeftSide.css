@@ -1,0 +1,82 @@
+/* .LeftSide_main{
+    height: 4vh;
+    width: 100vw;
+    border-bottom: 0.5px solid #e4e8ed;
+    padding: 20px;
+}
+.LeftSide_header{
+    font-weight: bold;
+    margin: 4px;
+}
+
+.LeftSide_main > span {
+    padding : 10px;
+}
+
+
+.brand_name{
+   
+    width: 100px;
+} */
+
+
+.shop-by-category {
+    margin: 25px 0;
+}
+@media only screen and (min-width: 768px) {
+    .shop-by-category {
+        margin: 20px 20px
+   }
+}
+.shop-by-category .categories {
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+   
+  justify-content: center;
+}
+.shop-by-category .categories .category {
+      /* background-color: black; */
+      width: calc(50% - 5px);
+      height: 175px;
+      position: relative;
+     
+      
+}
+@media only screen and (min-width: 768px) {
+    .shop-by-category .categories .category {
+        width: calc(14% - 8px);
+   }
+}
+.shop-by-category .categories .category img {
+   --s: 70%;   /* the size of the image */
+  --b: 2px;     /* the border thickness*/
+  --g: -1px;    /* the gap */
+  --c: #FF4500; /* the color */
+
+  
+  display: block;
+  width: var(--s);
+  aspect-ratio: 1;
+  
+  
+  cursor: pointer;
+  transition: 0.3s; 
+ 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15%;
+    
+}
+
+.shop-by-category .categories  .category img:hover {
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+    
+}
+
+
+
+

@@ -1,0 +1,183 @@
+
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+}
+
+.header {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* width: 100%;
+    padding: 0 0px;
+    z-index: 99;
+    background-color: #212121; 
+     display: flex;
+    color: white;
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1); */
+  }
+  
+  .header__logo {
+    font-family: myFirstFont;
+    width: 160px;
+    margin-left: 10px;
+    font-size: 50px;
+    height: 65px;
+    font-weight: 600;
+    color: #FF4500;
+  }
+  
+  .header__search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 24px;
+  }
+  
+  .header__searchInput {
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+  }
+  
+  .header__searchIcon {
+    padding: 5px;
+    height: 22px !important;
+    background-color: #cd9042;
+  }
+  
+  .header__optionLineOne {
+    font-size: 10px;
+  }
+  
+  .header__optionLineTwo {
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .header__optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .header__basketCount {
+    font-weight: bold;
+    position: relative;
+    left: -21px;
+    top: -6px;
+    color: #F08805;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .header__option {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+  }
+
+.navbar__footer {
+    width: 100vw;
+    height: 30px;
+    background-color: #22303E;
+    color: white;
+    display: flex;
+}
+.navbar__footer_text {
+    margin: 5px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+} 
+.cart__image {
+    background: url('https://ik.imagekit.io/amazon1234/sprite_350x_q7QZkJCVl.png?updatedAt=1627121934264') no-repeat -217px -336px;
+    width: 43px;
+	height: 30px;
+}
+
+
+
+
+.Container{
+  height: 60px;
+  background-color: white;
+}
+
+.Wrapper{
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Left{ 
+  flex: 1;
+  display: flex;
+  align-items: center;}
+
+.SearchContainer{ 
+  border: 0.5px solid lightgray;
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+  padding: 5px;
+}
+
+.Input {
+  border: none;
+}
+
+.Center {
+  flex: 1;
+  text-align: center;
+}
+
+.Logo{
+  font-family: Slackey;
+  font-weight: bold;
+}
+.Right{ 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.MenuItem {
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 25px;
+}
+
+
+.sticky-header {
+  background-color: #212121;
+  color: white;
+  position: sticky;
+  top: 0;
+  transform: translateY(-60px);
+  animation: StickyHeader 0.3s ease forwards;
+}
+@keyframes StickyHeader {
+  0% {
+    transform: translateY(-60px);
+ }
+  100% {
+    transform: translateY(0);
+ }
+}
+   
